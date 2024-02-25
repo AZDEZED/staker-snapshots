@@ -1,16 +1,13 @@
-# Dymension staker snapshots
+This repository archives historical snapshots of Dymension stakers, provided by Dymension validators. Snapshots are in CSV format with the following structure:
 
-This repo contains historical snapshots of Dymension stakers. These snapshots are provided by Dymension validators. Snapshots follow the following format in CSV: 
+File name: validator_YYYYMMDD.csv
 
-File name: `validator_YYYYMMDD.csv`
+Format: staked DYM and its respective owners
 
-Format: staked DYM and its owners
-
-```csv
-delagatoraddress, delegated dym;
-delagatoraddress, delegated dym;
+csv
+Copy code
+delegator_address, delegated_dym;
+delegator_address, delegated_dym;
 ...
-delagatoraddress, delegated dym;
-```
-
-* be aware that this is not sybil resistant: an individual can spin up multiple wallets and show up as multiple holders.
+delegator_address, delegated_dym;
+Please note that this system is not sybil resistant, as individuals can create multiple wallets and appear as multiple holders.
